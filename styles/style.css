@@ -24,13 +24,12 @@ header p {
 
 
 /* Navigation menu */
-nav li{
-    margin: 1px 0;
-    background-color: lightgray;
-}
 nav a {
+    display: block;
     text-decoration: none;
     color: white;
+    background-color: lightgray;
+    margin: 1px 0;
 } 
 nav div {
     display: flex;
