@@ -1,5 +1,8 @@
 # CV page
 
+## My assignment
+My CV page on [Github Pages](https://fbw41-2.github.io/cv-vbldra/index.html)
+
 ![layout](drafts/page.png "CV page")
 
 ## Requirements
