@@ -24,18 +24,23 @@ header p {
 
 
 /* Navigation menu */
-nav li {
-    padding: 10px 30px;
+nav li{
     margin: 1px 0;
     background-color: lightgray;
-    font-size: 2rem;
 }
 nav a {
     text-decoration: none;
     color: white;
+} 
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+nav p {
     font-size: 1.5rem;
 }
-
 
 /* Main page */
 h2 {
