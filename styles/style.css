@@ -55,11 +55,12 @@ article {
 }
 
 /* Resume */
-#resume b {
-    font-size: 1.2rem;
+#resume div * {
+    font-size: 1.3rem;
 }
-#resume span {
+#resume a {
     color: darkturquoise;
+
 }
 #resume p {
     color: gray;
