@@ -101,16 +101,6 @@ article {
     height: 10px;
     border-radius: 4px;
 }
-.html-css .progress {
-    width: 60%;
-}
-.javascript .progress {
-    width: 10%;
-}
-.react .progress {
-    width: 1%;
-}
-
 
 /* Footer */
 footer {
