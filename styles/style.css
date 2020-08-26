@@ -30,15 +30,14 @@ nav a {
     color: white;
     background-color: lightgray;
     margin: 1px 0;
-} 
-nav div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
     padding: 10px 30px;
-}
-nav p {
     font-size: 1.5rem;
+}
+nav a::after {
+    content: ">";
+    position: absolute;
+    right: 30px;
 }
 
 /* Main page */
@@ -79,8 +78,6 @@ article {
 #portfolio img {
     width: 100%;
 }
-
-
 
 /* Skills */
 #skills div {
