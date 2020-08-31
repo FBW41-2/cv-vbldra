@@ -7,7 +7,8 @@
     <meta name="description" content="Ilona's cv">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> -->
+    <script src="https://kit.fontawesome.com/3ec0671596.js" crossorigin="anonymous"></script>
     <title>CV Ilona Avdiushkina</title>
 </head>
 <body>
@@ -15,33 +16,32 @@
         <img src="images/ilona.jpg" alt="Photo of Ilona Avdiushkina">
         <h1>Ilona Avdiushkina</h1>
         <p>Web Developer</p>
+        <nav>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#resume">Resume</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-	</nav>
+    
 	<main>
         <section id="resume">
             <h2>Resume</h2>
             <article>
-                <div>
-                    <b>Study Web Development <a href="https://digitalcareerinstitute.org/" target="_blank">DCI</a></b>
-                    <p>2020-2021</p>
-                </div>
-                <div>
-                    <b>Industrial Designer <a href="https://nordplast.com/" target="_blank">Nordplast</a></b>
-                    <p>2012-2015</p>
-                </div>
-                <div>
-                    <b>Design Engineer <a href="http://www.lomo.ru/" target="_blank">LOMO</a></b>
-                    <p>2010-2012</p>
-                </div>
-                <div>
-                    <b>Optic Design Engineer <a href="https://en.ifmo.ru" target="_blank">StPNRU ITMO</a></b>
-                    <p>2006-2012</p>
-                </div>
+                <ul>
+                    <li>
+                        <p>Study Web Development <a href="https://digitalcareerinstitute.org/" target="_blank">DCI</a><br><em>2020-2021</em></p>
+                    </li>
+                    <li>
+                        <p>Industrial Designer <a href="https://nordplast.com/" target="_blank">Nordplast</a><br><em>2012-2015</em></p>
+                    </li>
+                    <li>
+                        <p>Design Engineer <a href="http://www.lomo.ru/" target="_blank">LOMO</a><br><em>2010-2012</em></p>
+                    </li>
+                    <li>
+                        <p>Optic Design Engineer <a href="https://en.ifmo.ru" target="_blank">StPNRU ITMO</a><br><em>2006-2012</em></p>
+                    </li>
+                </ul>
                 <div id="cv-download">
                     <a href="files/IlonaAvdiushkina-cv.pdf" download>Download my resume (PDF)</a>
                 </div>
@@ -53,9 +53,7 @@
                 <a href="https://vbldra.github.io/Portfolio/index.html" target="_blank">
                     <img src="images/webpage1.png" alt="Ilona's potfolio page">
                 </a>
-                <p>
-                    <b>Portfolio page </b><span>2020</span>
-                </p>
+                <p>Portfolio page<br><em>2020</em></p>
             </article>
         </section>
         <section id="skills">
@@ -78,7 +76,7 @@
                 <div>
                     <p>React</p>
                     <div class="status-bar">
-                        <div class="progress" style="width: 1%;">
+                        <div class="progress" style="width: 5%;">
                         </div>
                     </div>
                 </div>
@@ -89,21 +87,12 @@
         <section id="contact">
             <h2>My contacts</h2>
             <article>
-                <div>
-                    <a href="https://github.com/vbldra" target="_blank"><i class="fab fa-github-square"></i>my github</a>
-                </div>
-                <div>
-                    <a href="mailto:ilona.avdiushkina@gmail.com"><i class="fas fa-envelope-square"></i>my email</a>
-                </div>
-                <div>
-                    <a href="tel:+4915163572437"><i class="fas fa-phone-square-alt"></i></i>my phone</a>
-                </div>
-                <div>
-                    <a href="https://www.xing.com/profile/Ilona_Avdiushkina/cv" target="_blank"><i class="fab fa-xing-square"></i>my xing</a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/avdiushkina/" target="_blank"><i class="fab fa-linkedin"></i>my linkedin</a>
-                </div>
+                <p>Feel free to contact me!</p>
+                <a href="https://github.com/vbldra" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="mailto:ilona.avdiushkina@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                <a href="tel:+4915163572437"><i class="fas fa-phone-square-alt"></i></i></a>
+                <a href="https://www.xing.com/profile/Ilona_Avdiushkina/cv" target="_blank"><i class="fab fa-xing-square"></i></a>
+                <a href="https://www.linkedin.com/in/avdiushkina/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </article>
         </section>
 	</footer>
