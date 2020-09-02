@@ -18,16 +18,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: #6A7574;
-
 }
-
-
-
-
 
 /* Header */
 header {
-    padding-top: 1.3em;
+    padding-top: 3em;
     padding-bottom: 2px;
     text-align: center;
     background-color: #DCF5F1;
@@ -53,6 +48,7 @@ nav {
 nav a {
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
     color: #DCF5F1;
     background-color: #97A8A6;
     position: relative;
@@ -79,7 +75,7 @@ section {
 }
 h2 {
     padding: 1.2em 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #DCF5F1;
     text-align: center;
 }
@@ -162,11 +158,9 @@ em {
     height: 50px;
     box-sizing: border-box;
     margin: 10px;
-    
 }
 #contact p {
     font-weight: 700;
-    margin-bottom: 0.8em;
 }
 #contact article div {
     display: flexbox;
@@ -175,18 +169,39 @@ em {
 #contact i {
     color: #6A7574;
     font-size: 3em;
-    transition: transform 0.5s;
-    
+    transition: transform 0.5s; 
 }
 #contact i:hover {
     transform: scale(1.2);
 }
 
-@media (max-width: 500px) {
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
     nav {
         padding: 0 5%;
         font-size: 1.5em;
     }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+
+@media (max-width: 500px) {
+    
 }
 
 @media (min-width: 501px) and (max-width: 640px) {
