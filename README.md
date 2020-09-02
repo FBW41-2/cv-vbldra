@@ -1,30 +1,20 @@
-# CV page
-
-## My assignment
-My CV page on [Github Pages](https://fbw41-2.github.io/cv-vbldra/index.html)
-
-![layout](drafts/page.png "CV page")
-
-## Requirements
-- The page is supposed to work on phones only
-- Use the meta viewport tag to enable propper scaling:
-  ```html
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  ```
-- The email link needs to open the email application
-- The phone link needs to open the phone app when klicked on a phone
-- The PDF download link should start a download
-- Social media links should:
-  - have icons of the services
-  - open in a new tab
-  
-- Your photo should be displayed in a circle using border radius
-- The menu should be linked to the several sections of the page
-- Images in the portfolio need to be linked
-
-## Code quality requirements
-- No block tags inside of inline tags
-- Links of the main menu need to have padding
-- Margins between text and screed edges as well as between text and element edges
-- Correct HTML base structure
-- No visual elements in the head
+# Second assignment
+- Please use live-server while working on the project
+### Scss
+- Put all the CSS of the site into a SCSS file
+- Use SCSS nesting instead of children selectors
+### Images
+- For images only the width should be set not the height, so they maintain their original aspect ratio
+### Responsivity
+- Please make sure that the changes you make going forward don't affect the mobile version negatively.
+- Use bootstraps breakpoint for medium screen sizes from the [Bootstrap documentation](https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints)
+  #### In that media query add:
+  - Hover effects for all links
+  - The links of the main navigation should be displayed next to each other on medium size screens
+  - The navigation links should appear in uppercase
+  - Set a maximum width for the main container so the content is preventet from running too wide on big screens
+### Code quality
+- Don't use hr tags. Lines have to be created using border
+- Don't use br tags to allign Elements vertically or to create margins. You can use ```display: block``` for vertical alignment and ```margin``` or ```padding``` for margins for example.
+### Bonus
+- Add styling to the header of the page so that it takes up the entire height of the viewport. Hint: you can use ```vh``` for that. To avoid problems with small screens define the CSS for this in a media query that will only apply it on bigger screens.
