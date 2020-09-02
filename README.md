@@ -1,9 +1,8 @@
-# Second assignment
-
 ## My assignment
 My CV page on [Github Pages](https://fbw41-2.github.io/cv-vbldra/index.html)
 
 
+# Second assignment
 - Please use live-server while working on the project
 ### Scss
 - Put all the CSS of the site into a SCSS file
