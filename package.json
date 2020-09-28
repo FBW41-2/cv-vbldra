@@ -1,0 +1,14 @@
+{
+  "name": "cv-vbldra",
+  "version": "1.0.0",
+  "description": "My CV page on [Github Pages](https://fbw41-2.github.io/cv-vbldra/index.html)",
+  "main": "index.js",
+  "scripts": {
+    "live": "live-server",
+    "sass": "sass scss/style.scss scss/style.css --watch"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.2"
+    
+  }
+}
