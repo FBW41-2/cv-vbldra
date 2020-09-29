@@ -21,6 +21,9 @@ $breackpoint-md: 768px;
     padding: 0;
     scroll-behavior: smooth;
 }
+h1 {
+    font-size: 2em;
+}
 
 body {
     max-width: 1500px;
@@ -32,184 +35,172 @@ body {
     @media screen and (min-width: $breackpoint-md) {
         font-size: 0.9em;
     }
-    header {
-        padding-top: 2em;
-        padding-bottom: 2px;
-        text-align: center;
-        background-color: $light-green;
-        img {
-            width: 200px;
-            border-radius: 50%;
-            box-shadow: 10px 15px 0px 30px $dark-green;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        p {
-            color: $dark-gray;
-            font-size: 1.5em;
-        }
-        nav {
-            margin-top: 1.2em;
+}
+
+header {
+    padding-top: 2em;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: $light-green;
+    img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 10px 15px 0px 30px $dark-green;
+    }
+    p {
+        color: $dark-gray;
+        font-size: 1.5em;
+    }
+    nav {
+        margin-top: 1.2em;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $breackpoint-sm) {
             display: flex;
-            flex-direction: column;
-            @media screen and (min-width: $breackpoint-sm) {
-                display: flex;
-                flex-direction: row;
-            }
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $light-green;
-                background-color: $dark-gray;
-                position: relative;
-                margin-bottom: 2px;
-                padding: 1.2em 1.5em;
-                font-size: 1.3em;
-                font-weight: 500;
-                @media screen and (min-width: $breackpoint-md) {
-                    font-size: 1em;
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                    @media screen and (min-width: $breackpoint-sm) {
-                        margin-right: 0;
-                    }
-                }
-                &::after {
-                    content: ">";
-                    position: absolute;
-                    right: 1.5em;
-                    @media screen and (min-width: $breackpoint-sm) {
-                        content: "";
-                    }
-                }
-                &:hover {
-                    background-color: $darker-gray;
-                }
-                @media screen and (min-width: $breackpoint-sm) {
-                    padding: 1em auto;
-                    font-size: 1.2em;
-                    flex: 1; 
-                    margin-bottom: 0;
-                    margin-right: 2px;
-                }
-            } 
+            flex-direction: row;
         }
-    }
-    main {
-        section {
-            h2 {
-                @extend %heading-2; 
-                background: $dark-green; 
-            }
-            article {
-                padding: 1.5em 1.3em; 
-                background-color: $light-green;
-            }
-        }
-        #resume {
-            article {
-                ul {
-                    li {
-                        margin-bottom: 0.8em;
-                        list-style-type: none;
-                        p {
-                            a{
-                                color: $dark-green;
-                                font-weight: 700;
-                            }
-                            em {
-                                color: $dark-gray;
-                            }
-                        }
-                    }
-                }
-                #cv-download {
-                    margin-top: 1.5em;
-                    a {
-                        color: $dark-green;
-                        font-weight: 700;
-                        font-size: 1.2em;
-                        &:hover {
-                            color: $darker-gray;
-                        }
-                    }
-                }
-            }
-        }
-        #portfolio {
-            article {
-                text-align: center;
-                a {
-                    img {
-                        width: 80%;
-                        box-shadow: 3px 5px 0px 10px $dark-green;
-                        margin-bottom: 1.2em;
-                        transition: transform 0.5s;
-                        &:hover {
-                            transform: scale(1.05);
-                        }
-                    }
-                }
-            }
-        }
-        #skills {
-            article {
-                .skills-class {
-                    font-size: 1.2em;
-                    font-weight: 700;
-                    margin-bottom: 1em;
-                    @media screen and (min-width: $breackpoint-md) {
-                        font-size: 1em;
-                        font-weight: 500;
-                    }
-                    .status-bar {
-                        height: 15px;
-                        border: 1px solid $dark-gray;
-                        border-radius: 7px;
-                        .progress {
-                            background-color: $darker-gray;
-                            height: 15px;
-                            border-radius: 6px;
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-    #contact {
-        h2 {
-            @extend %heading-2; 
-            background: $darker-gray; 
-        } 
-        article {
-            text-align: center;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $light-green;
             background-color: $dark-gray;
-            padding-top: 1.3em;
-            padding-bottom: 1.3em;
-            p {
+            position: relative;
+            margin-bottom: 2px;
+            padding: 1.2em 1.5em;
+            font-size: 1.3em;
+            font-weight: 500;
+            @media screen and (min-width: $breackpoint-md) {
+                font-size: 1em;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                @media screen and (min-width: $breackpoint-sm) {
+                    margin-right: 0;
+                }
+            }
+            &::after {
+                content: ">";
+                position: absolute;
+                right: 1.5em;
+                @media screen and (min-width: $breackpoint-sm) {
+                    content: "";
+                }
+            }
+            &:hover {
+                background-color: $darker-gray;
+            }
+            @media screen and (min-width: $breackpoint-sm) {
+                padding: 1em auto;
+                font-size: 1.2em;
+                flex: 1; 
+                margin-bottom: 0;
+                margin-right: 2px;
+            }
+        } 
+    }
+}
+
+section {
+    h2 {
+        @extend %heading-2; 
+        background: $dark-green; 
+    }
+    article {
+        padding: 1.5em 1.3em; 
+        background-color: $light-green;
+    }
+}
+
+#resume article {
+    ul li {
+        margin-bottom: 0.8em;
+        list-style-type: none;
+        p {
+            a{
+                color: $dark-green;
                 font-weight: 700;
             }
-            div {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 10px auto;
-                a {
-                    display: inline-block;
-                    text-align: center;
-                    width: 50px;
-                    height: 50px;
-                    box-sizing: border-box;
-                    i {
-                        color: $darker-gray;
-                        font-size: 3em;
-                        transition: transform 0.5s; 
-                        &:hover {
-                            transform: scale(1.2);
-                        }
+            em {
+                color: $dark-gray;
+            }
+        }
+    }     
+    #cv-download {
+        margin-top: 1.5em;
+        a {
+            color: $dark-green;
+            font-weight: 700;
+            font-size: 1.2em;
+            &:hover {
+                color: $darker-gray;
+            }
+        }
+    }
+}
+
+#portfolio article {
+    text-align: center;
+    a img {
+        width: 80%;
+        box-shadow: 3px 5px 0px 10px $dark-green;
+        margin-bottom: 1.2em;
+        transition: transform 0.5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+#skills article .skills-class {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    @media screen and (min-width: $breackpoint-md) {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .status-bar {
+        height: 15px;
+        border: 1px solid $dark-gray;
+        border-radius: 7px;
+        .progress {
+            background-color: $darker-gray;
+            height: 15px;
+            border-radius: 6px;
+        }
+    }
+}
+
+#contact {
+    h2 {
+        @extend %heading-2; 
+        background: $darker-gray; 
+    } 
+    article {
+        text-align: center;
+        background-color: $dark-gray;
+        padding-top: 1.3em;
+        padding-bottom: 1.3em;
+        p {
+            font-weight: 700;
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px auto;
+            a {
+                display: inline-block;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                box-sizing: border-box;
+                i {
+                    color: $darker-gray;
+                    font-size: 3em;
+                    transition: transform 0.5s; 
+                    &:hover {
+                        transform: scale(1.2);
                     }
                 }
             }
